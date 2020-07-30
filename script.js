@@ -30,8 +30,8 @@ for (i = 0; i < 16; i++) {
 var resizeButton = document.createElement('button');
 resizeButton.textContent = 'Resize';
 resizeButton.style.position = 'relative';
-resizeButton.style.left = '7.5em';
-resizeButton.style.top = '1.5em';
+resizeButton.style.left = '29.5em';
+resizeButton.style.top = '3em';
 resizeButton.style.fontSize = '2em';
 resizeButton.addEventListener("click", resizeGrid);
 
@@ -39,13 +39,14 @@ resizeButton.addEventListener("click", resizeGrid);
 var clearButton = document.createElement('button');
 clearButton.textContent = 'Clear';
 clearButton.style.position = 'relative';
-clearButton.style.left = '14.8em';
-clearButton.style.top = '1.5em';
+clearButton.style.left = '37em';
+clearButton.style.top = '3em';
 clearButton.style.fontSize = '2em';
 clearButton.addEventListener("click", clearGrid);
 
-container.appendChild(resizeButton);
-container.appendChild(clearButton);
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(resizeButton);
+body.appendChild(clearButton);
 
 function resizeGrid() {
 
